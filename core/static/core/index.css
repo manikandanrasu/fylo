@@ -1,0 +1,117 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* CSS Variables */
+:root {
+    --header-height: 4.5rem;
+    --max_width: 1200px;
+
+    /* Colors */
+    --first-color: #1c69ff;
+    --second-color: #dbeaff;
+    --first-color-darken: #1552cc;
+    --second-color-darken: #b6d4ff;
+    --text-dark: #101727;
+    --text-gray: #404247;
+    --gray: #b3b6bd;
+    --white: #ffffff;
+
+    /* font and typography */
+    --body-font: "Inter", sans-serif;
+    --biggest-font-size: 3.846rem;
+    --h1-font-size: 2rem;
+    --normal-font-size: 1.278rem;
+    --small-font-size: 0.856rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    list-style: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    font-family: var(--body-font);
+}
+
+/* Navbar */
+.section__container {
+    max-width: var(--max_width);
+    margin: auto;
+    padding: 5rem 1rem;
+}
+
+nav {
+    position: fixed;
+    isolation: isolate;
+    width: 100%;
+    z-index: 9;
+}
+
+.nav__header {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+}
+
+.nav__logo a {
+    display: flex;
+    align-items: center;
+    font-size: var(--normal-font-size);
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.nav__menu__btn {
+    display: flex;
+    background-color: var(--first-color);
+    color: var(--white);
+    padding: 8px 11px;
+    border-radius: 7px;
+}
+
+.ri-menu-line {
+    font-weight: lighter;
+}
+
+.nav__links {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--white);
+    border-top: 0.5px solid var(--second-color-darken);
+    transition: .5s;
+    z-index: -1;
+    transform: translateY(-100%);
+}
+
+.nav__links.open {
+    transform: translateY(0);
+}
+
+.nav__links a {
+    color: var(--text-gray);
+    transition: .3s;
+}
+
+.nav__links a:hover {
+    color: var(--first-color);
+}
+
+.nav__btns {
+    display: none;
+}
+

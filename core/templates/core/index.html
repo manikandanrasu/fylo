@@ -1,0 +1,28 @@
+{% extends 'core/base.html' %}
+
+{% block title %}temporary{% endblock %}
+
+{% block content %}
+<!--==================== NAVBAR ====================-->
+<nav>
+    <div class="nav__header">
+        <div class="nav__logo"><a href="">Fylo</a></div>
+        <div class="nav__menu__btn" id="menu-btn">
+            <span><i class="ri-menu-line"></i></span>
+        </div>
+    </div>
+    <ul class="nav__links" id="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">How It Works</a></li>
+        <li><a href="#">Docs</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="nav__btns">
+        <button class="btn">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/32px-Google_%22G%22_Logo.svg.png" class="google__icon">
+            Sign In
+        </button>
+    </div>
+</nav>
+{% endblock %}
