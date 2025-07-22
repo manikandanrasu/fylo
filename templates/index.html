@@ -4,7 +4,7 @@
 
 {% block content %}
 
-<!--==================== NAVBAR ====================-->
+<!-- Navbar -->
 <nav>
     <div class="nav__header">
         <div class="nav__logo"><a href="">Fylo</a></div>
@@ -26,7 +26,7 @@
     </div>
 </nav>
 
-<!--==================== HEADER ====================-->
+<!-- Header -->
 
 <header class="section__container header__container">
     <div class="header__content">
@@ -36,6 +36,48 @@
             automation, innovation and real-world impact. Whether you're a beginner or a pro, discover ideas that save time, boost creativity,
             and bring Smart Innovation to life
         </p>
+        <div class="header__btn">
+            <button class="btn btn__explore">Explore Ideas</button>
+            <button class="btn btn__demo">
+                Watch Demo
+                <i class="ri-play-circle-line"></i>
+            </button>
+        </div>
     </div>
 </header>
+
+<!--Dashobard -->
+<section class="dashboard__container">
+    <div class="dashboard__content">
+        <div class="dashboard__title">
+            <span><i class="ri-apps-line"></i></span>
+            <h1>Dashboard</h1>
+        </div>
+
+        <div class="dashboard__grid">
+            <div class="dashboard__card">
+                <div class="card__icon"></div>
+                <div class="card__content">
+                    <h1>4</h1>
+                    <p>Total Project Generated</p>
+                </div>
+            </div>
+    
+            <div class="dashboard__card">
+                <div class="card__icon"></div>
+                <div class="card__content">
+                    <h1>4</h1>
+                    <p>Student Beneited</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="last-update"><span class="dot"></span> Last updated: 22/07/2025, 12:04:47</p>
+    </div>
+</section>
+
+<!-- How It Works -->
+<section class="features_container">
+
+</section>
 {% endblock %}
