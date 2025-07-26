@@ -356,12 +356,12 @@ i {
     font-size: var(--small-font-size);
 }
 
-/*=============== SECTION: FEATURE ===============*/
+/*=============== SECTION: WHY WE ===============*/
 
 .benefit__container {
     max-width: var(--max_width);
-    margin: auto;
-    padding: 4rem 1rem 1rem;
+    margin: 3rem 1rem;
+    padding: 1rem;
 }
 
 .benefit__badge {
@@ -381,9 +381,13 @@ i {
     transform: translateY(-3px);
 }
 
-.benefit__head {
+.benefit__container h2 {
     color: var(--text-black);
     font-size: var(--medium-font-size);
+}
+
+.benefit__container p {
+    font-size: var(--normal-font-size);
 }
 
 .benefit__content {
@@ -418,3 +422,5 @@ i {
 .ri-arrow-right-circle-fill {
     font-size: var(--h1-font-size);
 }
+
+/*=============== Footer ===============*/
