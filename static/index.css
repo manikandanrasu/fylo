@@ -255,7 +255,6 @@ nav {
 
 .header__btn .btn {
     padding: 0.75rem 1.3rem;
-    font-size: var(--normal-font-size);
     border-radius: 24px;
     font-size: var(--btn_font);
     font-weight: 600;
