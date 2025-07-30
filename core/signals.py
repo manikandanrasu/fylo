@@ -1,7 +1,9 @@
 from django.dispatch import receiver
 from allauth.socialaccount.signals import social_account_added
-
 from .models import User
+import logging
+
+logger = logging.getLogger(__name__)
 
 @receiver(social_account_added)
 def store_user(request, sociallogin, **kwargs):
@@ -13,12 +15,16 @@ def store_user(request, sociallogin, **kwargs):
     google_id = data.get("id")
 
     # Check if user already exists, if not save in custom table
-    user = User.objects.filter(email=email).exists()
+    if not email:
+        logger.warning("Missing email")
+        return 
 
-    if not user:
+    if not User.objects.filter(email=email).exists():
         User.objects.create(
             name=name,
             email=email,
             profile_pic=profile,
-            google_id =google_id
+            google_id=google_id
         )
+
+        logger.info(f"Stored new social login user: {email}")
