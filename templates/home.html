@@ -1,12 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}Fylo - Home{% endblock %}
+
+{% block content %}
+<header class="header__main">
+    <div class="header__bar">
+        <div class="header__logo"><a href="">Fylo</a></div>
+        <div class="header__profile" id="user-profile"></div>
+    </div>
+
+    <div class="header__menu" id="user-menu">
+        <div class="menu__gmail">
+            <p>manikandan20rb@gmail.com</p>
+        </div>
+
+        <div class="menu__item">
+            <a href="">
+                <i class="ri-global-line item__icon"></i>
+                English
+            </a>
+
+            <a href="">
+                <span>
+                    <i class="ri-logout-box-r-line item__icon"></i>
+                    Sign Out
+                </span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<section class="section__container">
+    <div class="gen__content">
+        <h2>project ideas</h1>
+        <p>find your next project effortlrssly</p>
+    </div>
+</section>
+{% endblock %}
