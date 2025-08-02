@@ -30,10 +30,66 @@
     </div>
 </header>
 
-<section class="section__container">
-    <div class="gen__content">
-        <h2>project ideas</h1>
-        <p>find your next project effortlrssly</p>
+<!-- <section class="section__container">
+    <div class="gen__card">
+        <h2>Project ideas</h1>
+        <p>Find your next project effortlessly</p>
+
+        <div class="card__wrapper">
+            <textarea class="gen__input" placeholder="Describe your hint" rows="4"></textarea>
+        </div>
+
+        <div class="card__bottom">
+            <button class="gen__btn">
+                <i class="ri-ai-generate generate__icon"></i>
+                Retry
+            </button>
+
+            <button class="download__btn">
+                Download
+                <i class="ri-file-download-line"></i>
+            </button>
+        </div>
+    </div>
+</section> -->
+
+<section>
+    <div class="section__container pill__group">
+        <button class="pill__btn">Embedded architecture</button>
+        <button class="pill__btn">Analog digital</button>
+        <button class="pill__btn">Micro controller processor</button>
+    </div>
+
+    <div class="alertmsg" id="alertMsg"></div>
+
+    <div class="gen__card">
+        <input class="gen__input" type="text" id="userInput">
+        <button class="btn" id="generateBtn">generate</button>
+    </div>
+
+    <div class="project__card">
+        <div class="card">
+
+        </div>
+
+        <div class="card">
+
+        </div>
+    </div>
+
+    <div>
+        <h1>Recent</h1>
+
+        <div class="project__card">
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
+    </div>
+
+    <div class="output" id="output">
+        <div class="show">
+
+        </div>
     </div>
 </section>
 {% endblock %}

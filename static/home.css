@@ -23,8 +23,8 @@
     --h1-font-size: 2rem;
     --medium-font-size: 1.8rem;
     --normal-font-size: 1.086rem;
-    --normal-font-size: 1.218rem;
-    --btn_font: 1rem;
+    /* --normal-font-size: 1.218rem; */
+    --btn-font: 1rem;
     --small-font-size: 0.856rem;
 }
 
@@ -164,12 +164,156 @@ html {
     margin-right: 8px;
 } 
 
-/* Section: Gen */
-.gen__content {
+/*=============== Section: main ===============*/
+/* .gen__card {
     display: flex;
     flex-direction: column;
     padding: 1rem;
     background-color: var(--white);
     border-radius: 12px;
     border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.gen__card p {
+    color: var(--text-gray);
+    font-size: var(--btn-font);
+}
+
+.card__wrapper {
+    margin: 1rem 0 2rem;
+}
+
+.gen__input {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gen__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    color: var(--text-dark);
+    gap: 0.5rem;
+    font-size: var(--btn_font);
+}
+
+.generate__icon {
+    display: flex;
+    align-items: center;
+    background-color: var(--text-dark);
+    color: var(--white);
+    padding: 4px;
+    border-radius: 50%;
+    font-size: var(--small-font-size);
+}
+
+.download__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--first-color);
+    color: var(--white);
+    padding: 0.8rem 1.5rem;
+    gap: 0.5rem;
+    border-radius: 24px;
+    font-size: var(--btn-font);
+} */
+
+
+/*=============== sample: fylo ===============*/
+.alertmsg {
+    position: fixed;
+    background-color: #f44336;
+    color: var(--white);
+    top: 10px;
+    left: 14px;
+    width: 94%;
+    text-align: center;
+    padding: 10px;
+    z-index: 50;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.alertmsg.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.pill__group {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.pill__btn {
+    background-color: var(--white);
+    padding: 10px 18px;
+    border-radius: 1000px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    border: 1.5px solid rgba(0, 0, 0, 0.1);
+    transition: background-color 0.4s ease, border 0.4s ease;
+}
+
+.pill__btn:hover {
+    background-color: var(--second-color);
+    border: 1px solid var(--first-color);
+}
+
+/* Gen card */
+
+.gen__card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1rem;
+}
+.gen__input {
+    height: 50px;
+    font-size: var(--normal-font-size);
+}
+
+.btn {
+    padding: 10px 18px;
+    border-radius: 1000px;
+    background-color: var(--first-color);
+    color: var(--white);
+}
+
+/* project card */
+.project__card {
+    display: flex;
+    margin: 1rem;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.card {
+    width: 180px;
+    height: 150px;
+    background-color: var(--white);
+}
+
+/* output */
+.output {
+    background-color: var(--text-dark);
+    color: var(--white);
+}
+
+.show {
+    width: 100%;
+    height: 250px;
 }
